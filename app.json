@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "biztracker-scaffold",
-    "slug": "biztracker-scaffold",
+    "name": "BizTracker",
+    "slug": "biztracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +20,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "BizTracker uses your photos so you can add a business logo and product images."
+        }
+      ],
+      "expo-font"
+    ],
+    "scheme": "biztracker",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
